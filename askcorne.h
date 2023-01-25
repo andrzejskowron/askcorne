@@ -1,6 +1,7 @@
 // Copyright 2023 andrzej.skowron (@andrzej.skowron)
 // SPDX-License-Identifier: GPL-2.0-or-later
 
+#include "quantum.h"
 #include "config.h"
 
 /* This is a shortcut to help you visually see your layout.
