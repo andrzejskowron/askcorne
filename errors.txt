@@ -24,17 +24,824 @@ Copyright (C) 2018 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
+Generating: .build/obj_askcorne/src/info_config.h                                                   [33;01m[WARNINGS][0m
+ | 
+ | ⚠ askcorne: UNUSED_PINS in config.h is deprecated and will be removed at a later date
+ | ⚠ askcorne: PRODUCT_ID in config.h is deprecated in favor of `usb.pid` in info.json and will be removed at a later date
+ | ⚠ askcorne: VENDOR_ID in config.h is deprecated in favor of `usb.vid` in info.json and will be removed at a later date
+ | ⚠ askcorne: PRODUCT in config.h is deprecated in favor of `keyboard_name` in info.json and will be removed at a later date
+ | ⚠ askcorne: MANUFACTURER in config.h is deprecated in favor of `manufacturer` in info.json and will be removed at a later date
+ | ⚠ askcorne: DEVICE_VER in config.h is deprecated in favor of `usb.device_version` in info.json and will be removed at a later date
+ | 
+Generating: .build/obj_askcorne/src/default_keyboard.c                                              [33;01m[WARNINGS][0m
+ | 
+ | ⚠ askcorne: UNUSED_PINS in config.h is deprecated and will be removed at a later date
+ | ⚠ askcorne: PRODUCT_ID in config.h is deprecated in favor of `usb.pid` in info.json and will be removed at a later date
+ | ⚠ askcorne: VENDOR_ID in config.h is deprecated in favor of `usb.vid` in info.json and will be removed at a later date
+ | ⚠ askcorne: PRODUCT in config.h is deprecated in favor of `keyboard_name` in info.json and will be removed at a later date
+ | ⚠ askcorne: MANUFACTURER in config.h is deprecated in favor of `manufacturer` in info.json and will be removed at a later date
+ | ⚠ askcorne: DEVICE_VER in config.h is deprecated in favor of `usb.device_version` in info.json and will be removed at a later date
+ | 
+Generating: .build/obj_askcorne/src/default_keyboard.h                                              [33;01m[WARNINGS][0m
+ | 
+ | ⚠ askcorne: UNUSED_PINS in config.h is deprecated and will be removed at a later date
+ | ⚠ askcorne: PRODUCT_ID in config.h is deprecated in favor of `usb.pid` in info.json and will be removed at a later date
+ | ⚠ askcorne: VENDOR_ID in config.h is deprecated in favor of `usb.vid` in info.json and will be removed at a later date
+ | ⚠ askcorne: PRODUCT in config.h is deprecated in favor of `keyboard_name` in info.json and will be removed at a later date
+ | ⚠ askcorne: MANUFACTURER in config.h is deprecated in favor of `manufacturer` in info.json and will be removed at a later date
+ | ⚠ askcorne: DEVICE_VER in config.h is deprecated in favor of `usb.device_version` in info.json and will be removed at a later date
+ | 
 Compiling: keyboards/askcorne/askcorne.c                                                            [32;01m[OK][0m
-Compiling: .build/obj_askcorne/src/default_keyboard.c                                              In file included from [01m[K.build/obj_askcorne/src/default_keyboard.c:26[m[K:
-[01m[K./.build/obj_askcorne/src/default_keyboard.h:6:[m[K [01;31m[Kerror: [m[Kignoring #pragma error  [[01;31m[K-Werror=unknown-pragmas[m[K]
- #pragma error("<keyboard>.h is only optional for data driven keyboards - kb.h == bad times")
- 
+Compiling: .build/obj_askcorne/src/default_keyboard.c                                               [32;01m[OK][0m
+Compiling: quantum/keymap_introspection.c                                                          In file included from [01m[K./.build/obj_askcorne/src/default_keyboard.h:30[m[K,
+                 from [01m[K./keyboards/askcorne/keymaps/default/keymap.c:3[m[K,
+                 from [01m[Kquantum/keymap_introspection.c:5[m[K:
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:24:5:[m[K [01;31m[Kerror: [m[K'[01m[KKC_GESC[m[K' undeclared here (not in a function); did you mean '[01m[KKC_ESC[m[K'?
+     [01;31m[KKC_GESC[m[K,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
+     [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:26:7:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { [01;36m[KL00[m[K, L01, L02, L03, L04, L05 }, \
+       [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:24:42:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_GESC,   KC_Q,   KC_D,    KC_R,    [01;31m[KKC_W[m[K,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
+                                          [01;31m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:26:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L00, L01, L02, L03, [01;36m[KL04[m[K, L05 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:24:42:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[0][0][m[K')
+     KC_GESC,   KC_Q,   KC_D,    KC_R,    [01;36m[KKC_W[m[K,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
+                                          [01;36m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:26:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L00, L01, L02, L03, [01;36m[KL04[m[K, L05 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:24:51:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_GESC,   KC_Q,   KC_D,    KC_R,    KC_W,    [01;31m[KKC_B[m[K,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
+                                                   [01;31m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:26:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L00, L01, L02, L03, L04, [01;36m[KL05[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:24:51:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[0][0][m[K')
+     KC_GESC,   KC_Q,   KC_D,    KC_R,    KC_W,    [01;36m[KKC_B[m[K,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
+                                                   [01;36m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:26:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L00, L01, L02, L03, L04, [01;36m[KL05[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:26:5:[m[K [01;31m[Kerror: [m[K'[01m[KKC_LCTRL[m[K' undeclared here (not in a function); did you mean '[01m[KKC_LCTL[m[K'?
+     [01;31m[KKC_LCTRL[m[K, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
+     [01;31m[K^~~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:27:7:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { [01;36m[KL10[m[K, L11, L12, L13, L14, L15 }, \
+       [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:26:41:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_LCTRL, KC_A,   KC_S,    KC_H,    [01;31m[KKC_T[m[K,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
+                                         [01;31m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:27:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L10, L11, L12, L13, [01;36m[KL14[m[K, L15 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:26:41:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[0][1][m[K')
+     KC_LCTRL, KC_A,   KC_S,    KC_H,    [01;36m[KKC_T[m[K,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
+                                         [01;36m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:27:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L10, L11, L12, L13, [01;36m[KL14[m[K, L15 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:26:50:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_LCTRL, KC_A,   KC_S,    KC_H,    KC_T,    [01;31m[KKC_G[m[K,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
+                                                  [01;31m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:27:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L10, L11, L12, L13, L14, [01;36m[KL15[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:26:50:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[0][1][m[K')
+     KC_LCTRL, KC_A,   KC_S,    KC_H,    KC_T,    [01;36m[KKC_G[m[K,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
+                                                  [01;36m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:27:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L10, L11, L12, L13, L14, [01;36m[KL15[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:28:41:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_LSFT,  KC_Z,   KC_X,    KC_M,    [01;31m[KKC_C[m[K,    KC_V,                      KC_K,    KC_L,    KC_COMM, KC_DOT,  KC_SLSH,  KC_RSFT, \
+                                         [01;31m[K^~~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:22:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLAYOUT[m[K'
+     [_QWERTY] = [01;36m[KLAYOUT[m[K( \
+                 [01;36m[K^~~~~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:28:41:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[0][2][m[K')
+     KC_LSFT,  KC_Z,   KC_X,    KC_M,    [01;36m[KKC_C[m[K,    KC_V,                      KC_K,    KC_L,    KC_COMM, KC_DOT,  KC_SLSH,  KC_RSFT, \
+                                         [01;36m[K^~~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:22:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLAYOUT[m[K'
+     [_QWERTY] = [01;36m[KLAYOUT[m[K( \
+                 [01;36m[K^~~~~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:28:50:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_LSFT,  KC_Z,   KC_X,    KC_M,    KC_C,    [01;31m[KKC_V[m[K,                      KC_K,    KC_L,    KC_COMM, KC_DOT,  KC_SLSH,  KC_RSFT, \
+                                                  [01;31m[K^~~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:22:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLAYOUT[m[K'
+     [_QWERTY] = [01;36m[KLAYOUT[m[K( \
+                 [01;36m[K^~~~~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:28:50:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[0][2][m[K')
+     KC_LSFT,  KC_Z,   KC_X,    KC_M,    KC_C,    [01;36m[KKC_V[m[K,                      KC_K,    KC_L,    KC_COMM, KC_DOT,  KC_SLSH,  KC_RSFT, \
+                                                  [01;36m[K^~~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:22:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLAYOUT[m[K'
+     [_QWERTY] = [01;36m[KLAYOUT[m[K( \
+                 [01;36m[K^~~~~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:30:34:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+                         KC_LALT, [01;31m[KKC_LGUI[m[K, LT(_RAISE, KC_ENT),               LT(_LOWER, KC_SPACE),   KC_BSPC,   KC_RALT \
+                                  [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:29:33:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { KC_NO, KC_NO, KC_NO, L30, [01;36m[KL31[m[K, L32 }, \
+                                 [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:30:34:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[0][3][m[K')
+                         KC_LALT, [01;36m[KKC_LGUI[m[K, LT(_RAISE, KC_ENT),               LT(_LOWER, KC_SPACE),   KC_BSPC,   KC_RALT \
+                                  [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:29:33:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { KC_NO, KC_NO, KC_NO, L30, [01;36m[KL31[m[K, L32 }, \
+                                 [01;36m[K^~~[m[K
+[01m[Kquantum/quantum_keycodes.h:119:23:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+ #define LT(layer, kc) [01;31m[K([m[KQK_LAYER_TAP | (((layer)&0xF) << 8) | ((kc)&0xFF))
+                       [01;31m[K^[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:29:38:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { KC_NO, KC_NO, KC_NO, L30, L31, [01;36m[KL32[m[K }, \
+                                      [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:30:43:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLT[m[K'
+                         KC_LALT, KC_LGUI, [01;36m[KLT[m[K(_RAISE, KC_ENT),               LT(_LOWER, KC_SPACE),   KC_BSPC,   KC_RALT \
+                                           [01;36m[K^~[m[K
+[01m[Kquantum/quantum_keycodes.h:119:23:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[0][3][m[K')
+ #define LT(layer, kc) [01;36m[K([m[KQK_LAYER_TAP | (((layer)&0xF) << 8) | ((kc)&0xFF))
+                       [01;36m[K^[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:29:38:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { KC_NO, KC_NO, KC_NO, L30, L31, [01;36m[KL32[m[K }, \
+                                      [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:30:43:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLT[m[K'
+                         KC_LALT, KC_LGUI, [01;36m[KLT[m[K(_RAISE, KC_ENT),               LT(_LOWER, KC_SPACE),   KC_BSPC,   KC_RALT \
+                                           [01;36m[K^~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:24:113:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_GESC,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    [01;31m[KKC_SCLN[m[K,    KC_MINS, \
+                                                                                                                 [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:30:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R00, R01, R02, R03, [01;36m[KR04[m[K, R05 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:24:113:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[0][4][m[K')
+     KC_GESC,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    [01;36m[KKC_SCLN[m[K,    KC_MINS, \
+                                                                                                                 [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:30:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R00, R01, R02, R03, [01;36m[KR04[m[K, R05 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:24:125:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_GESC,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    [01;31m[KKC_MINS[m[K, \
+                                                                                                                             [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:30:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R00, R01, R02, R03, R04, [01;36m[KR05[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:24:125:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[0][4][m[K')
+     KC_GESC,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    [01;36m[KKC_MINS[m[K, \
+                                                                                                                             [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:30:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R00, R01, R02, R03, R04, [01;36m[KR05[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:26:112:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_LCTRL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    [01;31m[KKC_I[m[K,    KC_QUOT, \
+                                                                                                                [01;31m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:31:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R10, R11, R12, R13, [01;36m[KR14[m[K, R15 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:26:112:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[0][5][m[K')
+     KC_LCTRL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    [01;36m[KKC_I[m[K,    KC_QUOT, \
+                                                                                                                [01;36m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:31:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R10, R11, R12, R13, [01;36m[KR14[m[K, R15 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:26:121:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_LCTRL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    [01;31m[KKC_QUOT[m[K, \
+                                                                                                                         [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:31:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R10, R11, R12, R13, R14, [01;36m[KR15[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:26:121:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[0][5][m[K')
+     KC_LCTRL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    [01;36m[KKC_QUOT[m[K, \
+                                                                                                                         [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:31:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R10, R11, R12, R13, R14, [01;36m[KR15[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:28:113:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_LSFT,  KC_Z,   KC_X,    KC_M,    KC_C,    KC_V,                      KC_K,    KC_L,    KC_COMM, KC_DOT,  [01;31m[KKC_SLSH[m[K,  KC_RSFT, \
+                                                                                                                 [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:32:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R20, R21, R22, R23, [01;36m[KR24[m[K, R25 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:28:113:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[0][6][m[K')
+     KC_LSFT,  KC_Z,   KC_X,    KC_M,    KC_C,    KC_V,                      KC_K,    KC_L,    KC_COMM, KC_DOT,  [01;36m[KKC_SLSH[m[K,  KC_RSFT, \
+                                                                                                                 [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:32:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R20, R21, R22, R23, [01;36m[KR24[m[K, R25 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:28:123:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_LSFT,  KC_Z,   KC_X,    KC_M,    KC_C,    KC_V,                      KC_K,    KC_L,    KC_COMM, KC_DOT,  KC_SLSH,  [01;31m[KKC_RSFT[m[K, \
+                                                                                                                           [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:32:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R20, R21, R22, R23, R24, [01;36m[KR25[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:28:123:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[0][6][m[K')
+     KC_LSFT,  KC_Z,   KC_X,    KC_M,    KC_C,    KC_V,                      KC_K,    KC_L,    KC_COMM, KC_DOT,  KC_SLSH,  [01;36m[KKC_RSFT[m[K, \
+                                                                                                                           [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:32:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R20, R21, R22, R23, R24, [01;36m[KR25[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:36:42:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_GESC,   KC_1,   KC_2,    KC_3,    [01;31m[KKC_4[m[K,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
+                                          [01;31m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:26:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L00, L01, L02, L03, [01;36m[KL04[m[K, L05 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:36:42:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[1][0][m[K')
+     KC_GESC,   KC_1,   KC_2,    KC_3,    [01;36m[KKC_4[m[K,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
+                                          [01;36m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:26:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L00, L01, L02, L03, [01;36m[KL04[m[K, L05 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:36:51:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_GESC,   KC_1,   KC_2,    KC_3,    KC_4,    [01;31m[KKC_5[m[K,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
+                                                   [01;31m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:26:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L00, L01, L02, L03, L04, [01;36m[KL05[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:36:51:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[1][0][m[K')
+     KC_GESC,   KC_1,   KC_2,    KC_3,    KC_4,    [01;36m[KKC_5[m[K,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
+                                                   [01;36m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:26:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L00, L01, L02, L03, L04, [01;36m[KL05[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[Kquantum/quantum_keycodes.h:48:18:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+ #define LSFT(kc) [01;31m[K([m[KQK_LSFT | (kc))
+                  [01;31m[K^[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:27:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L10, L11, L12, L13, [01;36m[KL14[m[K, L15 }, \
+                           [01;36m[K^~~[m[K
+[01m[Kquantum/quantum_keycodes.h:81:15:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLSFT[m[K'
+ #define S(kc) [01;36m[KLSFT[m[K(kc)
+               [01;36m[K^~~~[m[K
+[01m[Kquantum/keymap_extras/keymap_us.h:28:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KS[m[K'
+ #define KC_DLR  [01;36m[KS[m[K(KC_4)     // $
+                 [01;36m[K^[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:38:40:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KKC_DLR[m[K'
+     KC_GRV, KC_EXLM, KC_AT,   KC_HASH, [01;36m[KKC_DLR[m[K,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
+                                        [01;36m[K^~~~~~[m[K
+[01m[Kquantum/quantum_keycodes.h:48:18:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[1][1][m[K')
+ #define LSFT(kc) [01;36m[K([m[KQK_LSFT | (kc))
+                  [01;36m[K^[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:27:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L10, L11, L12, L13, [01;36m[KL14[m[K, L15 }, \
+                           [01;36m[K^~~[m[K
+[01m[Kquantum/quantum_keycodes.h:81:15:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLSFT[m[K'
+ #define S(kc) [01;36m[KLSFT[m[K(kc)
+               [01;36m[K^~~~[m[K
+[01m[Kquantum/keymap_extras/keymap_us.h:28:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KS[m[K'
+ #define KC_DLR  [01;36m[KS[m[K(KC_4)     // $
+                 [01;36m[K^[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:38:40:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KKC_DLR[m[K'
+     KC_GRV, KC_EXLM, KC_AT,   KC_HASH, [01;36m[KKC_DLR[m[K,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
+                                        [01;36m[K^~~~~~[m[K
+[01m[Kquantum/quantum_keycodes.h:48:18:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+ #define LSFT(kc) [01;31m[K([m[KQK_LSFT | (kc))
+                  [01;31m[K^[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:27:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L10, L11, L12, L13, L14, [01;36m[KL15[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[Kquantum/quantum_keycodes.h:81:15:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLSFT[m[K'
+ #define S(kc) [01;36m[KLSFT[m[K(kc)
+               [01;36m[K^~~~[m[K
+[01m[Kquantum/keymap_extras/keymap_us.h:29:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KS[m[K'
+ #define KC_PERC [01;36m[KS[m[K(KC_5)     // %
+                 [01;36m[K^[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:38:49:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KKC_PERC[m[K'
+     KC_GRV, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  [01;36m[KKC_PERC[m[K,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
+                                                 [01;36m[K^~~~~~~[m[K
+[01m[Kquantum/quantum_keycodes.h:48:18:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[1][1][m[K')
+ #define LSFT(kc) [01;36m[K([m[KQK_LSFT | (kc))
+                  [01;36m[K^[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:27:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L10, L11, L12, L13, L14, [01;36m[KL15[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[Kquantum/quantum_keycodes.h:81:15:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLSFT[m[K'
+ #define S(kc) [01;36m[KLSFT[m[K(kc)
+               [01;36m[K^~~~[m[K
+[01m[Kquantum/keymap_extras/keymap_us.h:29:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KS[m[K'
+ #define KC_PERC [01;36m[KS[m[K(KC_5)     // %
+                 [01;36m[K^[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:38:49:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KKC_PERC[m[K'
+     KC_GRV, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  [01;36m[KKC_PERC[m[K,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
+                                                 [01;36m[K^~~~~~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:40:41:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     _______, _______, _______, _______, [01;31m[K_______[m[K, _______,                    XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE, \
+                                         [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:28:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L20, L21, L22, L23, [01;36m[KL24[m[K, L25 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:40:41:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[1][2][m[K')
+     _______, _______, _______, _______, [01;36m[K_______[m[K, _______,                    XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE, \
+                                         [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:28:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L20, L21, L22, L23, [01;36m[KL24[m[K, L25 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:40:50:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     _______, _______, _______, _______, _______, [01;31m[K_______[m[K,                    XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE, \
+                                                  [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:28:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L20, L21, L22, L23, L24, [01;36m[KL25[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:40:50:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[1][2][m[K')
+     _______, _______, _______, _______, _______, [01;36m[K_______[m[K,                    XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE, \
+                                                  [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:28:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L20, L21, L22, L23, L24, [01;36m[KL25[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:42:42:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+                                 _______, [01;31m[K_______[m[K, _______,                   _______,  KC_DEL, _______ \
+                                          [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:29:33:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { KC_NO, KC_NO, KC_NO, L30, [01;36m[KL31[m[K, L32 }, \
+                                 [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:42:42:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[1][3][m[K')
+                                 _______, [01;36m[K_______[m[K, _______,                   _______,  KC_DEL, _______ \
+                                          [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:29:33:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { KC_NO, KC_NO, KC_NO, L30, [01;36m[KL31[m[K, L32 }, \
+                                 [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:42:51:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+                                 _______, _______, [01;31m[K_______[m[K,                   _______,  KC_DEL, _______ \
+                                                   [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:29:38:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { KC_NO, KC_NO, KC_NO, L30, L31, [01;36m[KL32[m[K }, \
+                                      [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:42:51:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[1][3][m[K')
+                                 _______, _______, [01;36m[K_______[m[K,                   _______,  KC_DEL, _______ \
+                                                   [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:29:38:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { KC_NO, KC_NO, KC_NO, L30, L31, [01;36m[KL32[m[K }, \
+                                      [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:36:115:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_GESC,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    [01;31m[KKC_0[m[K,    KC_EQUAL, \
+                                                                                                                   [01;31m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:30:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R00, R01, R02, R03, [01;36m[KR04[m[K, R05 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:36:115:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[1][4][m[K')
+     KC_GESC,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    [01;36m[KKC_0[m[K,    KC_EQUAL, \
+                                                                                                                   [01;36m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:30:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R00, R01, R02, R03, [01;36m[KR04[m[K, R05 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:36:124:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_GESC,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    [01;31m[KKC_EQUAL[m[K, \
+                                                                                                                            [01;31m[K^~~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:30:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R00, R01, R02, R03, R04, [01;36m[KR05[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:36:124:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[1][4][m[K')
+     KC_GESC,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    [01;36m[KKC_EQUAL[m[K, \
+                                                                                                                            [01;36m[K^~~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:30:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R00, R01, R02, R03, R04, [01;36m[KR05[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[Kquantum/quantum_keycodes.h:48:18:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+ #define LSFT(kc) [01;31m[K([m[KQK_LSFT | (kc))
+                  [01;31m[K^[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:31:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R10, R11, R12, R13, [01;36m[KR14[m[K, R15 }, \
+                           [01;36m[K^~~[m[K
+[01m[Kquantum/quantum_keycodes.h:81:15:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLSFT[m[K'
+ #define S(kc) [01;36m[KLSFT[m[K(kc)
+               [01;36m[K^~~~[m[K
+[01m[Kquantum/keymap_extras/keymap_us.h:34:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KS[m[K'
+ #define KC_RPRN [01;36m[KS[m[K(KC_0)     // )
+                 [01;36m[K^[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:38:115:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KKC_RPRN[m[K'
+     KC_GRV, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, [01;36m[KKC_RPRN[m[K, _______, \
+                                                                                                                   [01;36m[K^~~~~~~[m[K
+[01m[Kquantum/quantum_keycodes.h:48:18:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[1][5][m[K')
+ #define LSFT(kc) [01;36m[K([m[KQK_LSFT | (kc))
+                  [01;36m[K^[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:31:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R10, R11, R12, R13, [01;36m[KR14[m[K, R15 }, \
+                           [01;36m[K^~~[m[K
+[01m[Kquantum/quantum_keycodes.h:81:15:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLSFT[m[K'
+ #define S(kc) [01;36m[KLSFT[m[K(kc)
+               [01;36m[K^~~~[m[K
+[01m[Kquantum/keymap_extras/keymap_us.h:34:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KS[m[K'
+ #define KC_RPRN [01;36m[KS[m[K(KC_0)     // )
+                 [01;36m[K^[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:38:115:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KKC_RPRN[m[K'
+     KC_GRV, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, [01;36m[KKC_RPRN[m[K, _______, \
+                                                                                                                   [01;36m[K^~~~~~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:38:124:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_GRV, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, [01;31m[K_______[m[K, \
+                                                                                                                            [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:31:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R10, R11, R12, R13, R14, [01;36m[KR15[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:38:124:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[1][5][m[K')
+     KC_GRV, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, [01;36m[K_______[m[K, \
+                                                                                                                            [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:31:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R10, R11, R12, R13, R14, [01;36m[KR15[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[Kquantum/quantum_keycodes.h:48:18:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+ #define LSFT(kc) [01;31m[K([m[KQK_LSFT | (kc))
+                  [01;31m[K^[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:32:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R20, R21, R22, R23, [01;36m[KR24[m[K, R25 }, \
+                           [01;36m[K^~~[m[K
+[01m[Kquantum/quantum_keycodes.h:81:15:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLSFT[m[K'
+ #define S(kc) [01;36m[KLSFT[m[K(kc)
+               [01;36m[K^~~~[m[K
+[01m[Kquantum/keymap_extras/keymap_us.h:39:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KS[m[K'
+ #define KC_RCBR [01;36m[KS[m[K(KC_RIGHT_BRACKET) // }
+                 [01;36m[K^[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:40:114:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KKC_RCBR[m[K'
+     _______, _______, _______, _______, _______, _______,                    XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, [01;36m[KKC_RCBR[m[K, KC_PIPE, \
+                                                                                                                  [01;36m[K^~~~~~~[m[K
+[01m[Kquantum/quantum_keycodes.h:48:18:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[1][6][m[K')
+ #define LSFT(kc) [01;36m[K([m[KQK_LSFT | (kc))
+                  [01;36m[K^[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:32:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R20, R21, R22, R23, [01;36m[KR24[m[K, R25 }, \
+                           [01;36m[K^~~[m[K
+[01m[Kquantum/quantum_keycodes.h:81:15:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLSFT[m[K'
+ #define S(kc) [01;36m[KLSFT[m[K(kc)
+               [01;36m[K^~~~[m[K
+[01m[Kquantum/keymap_extras/keymap_us.h:39:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KS[m[K'
+ #define KC_RCBR [01;36m[KS[m[K(KC_RIGHT_BRACKET) // }
+                 [01;36m[K^[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:40:114:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KKC_RCBR[m[K'
+     _______, _______, _______, _______, _______, _______,                    XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, [01;36m[KKC_RCBR[m[K, KC_PIPE, \
+                                                                                                                  [01;36m[K^~~~~~~[m[K
+[01m[Kquantum/quantum_keycodes.h:48:18:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+ #define LSFT(kc) [01;31m[K([m[KQK_LSFT | (kc))
+                  [01;31m[K^[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:32:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R20, R21, R22, R23, R24, [01;36m[KR25[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[Kquantum/quantum_keycodes.h:81:15:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLSFT[m[K'
+ #define S(kc) [01;36m[KLSFT[m[K(kc)
+               [01;36m[K^~~~[m[K
+[01m[Kquantum/keymap_extras/keymap_us.h:40:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KS[m[K'
+ #define KC_PIPE [01;36m[KS[m[K(KC_BACKSLASH)     // |
+                 [01;36m[K^[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:40:123:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KKC_PIPE[m[K'
+     _______, _______, _______, _______, _______, _______,                    XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, [01;36m[KKC_PIPE[m[K, \
+                                                                                                                           [01;36m[K^~~~~~~[m[K
+[01m[Kquantum/quantum_keycodes.h:48:18:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[1][6][m[K')
+ #define LSFT(kc) [01;36m[K([m[KQK_LSFT | (kc))
+                  [01;36m[K^[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:32:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R20, R21, R22, R23, R24, [01;36m[KR25[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[Kquantum/quantum_keycodes.h:81:15:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLSFT[m[K'
+ #define S(kc) [01;36m[KLSFT[m[K(kc)
+               [01;36m[K^~~~[m[K
+[01m[Kquantum/keymap_extras/keymap_us.h:40:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KS[m[K'
+ #define KC_PIPE [01;36m[KS[m[K(KC_BACKSLASH)     // |
+                 [01;36m[K^[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:40:123:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KKC_PIPE[m[K'
+     _______, _______, _______, _______, _______, _______,                    XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, [01;36m[KKC_PIPE[m[K, \
+                                                                                                                           [01;36m[K^~~~~~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:47:41:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_GRV,   KC_1,   KC_2,    KC_3,    [01;31m[KKC_4[m[K,    KC_5,                      KC_6,    KC_7,    KC_6,    KC_9,    KC_0,    KC_EQUAL, \
+                                         [01;31m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:26:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L00, L01, L02, L03, [01;36m[KL04[m[K, L05 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:47:41:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[2][0][m[K')
+     KC_GRV,   KC_1,   KC_2,    KC_3,    [01;36m[KKC_4[m[K,    KC_5,                      KC_6,    KC_7,    KC_6,    KC_9,    KC_0,    KC_EQUAL, \
+                                         [01;36m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:26:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L00, L01, L02, L03, [01;36m[KL04[m[K, L05 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:47:50:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    [01;31m[KKC_5[m[K,                      KC_6,    KC_7,    KC_6,    KC_9,    KC_0,    KC_EQUAL, \
+                                                  [01;31m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:26:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L00, L01, L02, L03, L04, [01;36m[KL05[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:47:50:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[2][0][m[K')
+     KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    [01;36m[KKC_5[m[K,                      KC_6,    KC_7,    KC_6,    KC_9,    KC_0,    KC_EQUAL, \
+                                                  [01;36m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:26:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L00, L01, L02, L03, L04, [01;36m[KL05[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:49:43:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     _______,  KC_F2,    KC_F3,   KC_F4,   [01;31m[KKC_F5[m[K,   KC_F6,                   XXXXXXX, KC_LEFT, KC_DOWN, KC_RIGHT, XXXXXXX, XXXXXXX, \
+                                           [01;31m[K^~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:27:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L10, L11, L12, L13, [01;36m[KL14[m[K, L15 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:49:43:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[2][1][m[K')
+     _______,  KC_F2,    KC_F3,   KC_F4,   [01;36m[KKC_F5[m[K,   KC_F6,                   XXXXXXX, KC_LEFT, KC_DOWN, KC_RIGHT, XXXXXXX, XXXXXXX, \
+                                           [01;36m[K^~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:27:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L10, L11, L12, L13, [01;36m[KL14[m[K, L15 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:49:52:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     _______,  KC_F2,    KC_F3,   KC_F4,   KC_F5,   [01;31m[KKC_F6[m[K,                   XXXXXXX, KC_LEFT, KC_DOWN, KC_RIGHT, XXXXXXX, XXXXXXX, \
+                                                    [01;31m[K^~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:27:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L10, L11, L12, L13, L14, [01;36m[KL15[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:49:52:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[2][1][m[K')
+     _______,  KC_F2,    KC_F3,   KC_F4,   KC_F5,   [01;36m[KKC_F6[m[K,                   XXXXXXX, KC_LEFT, KC_DOWN, KC_RIGHT, XXXXXXX, XXXXXXX, \
+                                                    [01;36m[K^~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:27:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L10, L11, L12, L13, L14, [01;36m[KL15[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:51:43:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     _______,   KC_F8,   KC_F9,   KC_F10,  [01;31m[KKC_F11[m[K,  KC_F12,                  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+                                           [01;31m[K^~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:28:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L20, L21, L22, L23, [01;36m[KL24[m[K, L25 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:51:43:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[2][2][m[K')
+     _______,   KC_F8,   KC_F9,   KC_F10,  [01;36m[KKC_F11[m[K,  KC_F12,                  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+                                           [01;36m[K^~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:28:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L20, L21, L22, L23, [01;36m[KL24[m[K, L25 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:51:52:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     _______,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  [01;31m[KKC_F12[m[K,                  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+                                                    [01;31m[K^~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:28:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L20, L21, L22, L23, L24, [01;36m[KL25[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:51:52:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[2][2][m[K')
+     _______,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  [01;36m[KKC_F12[m[K,                  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+                                                    [01;36m[K^~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:28:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L20, L21, L22, L23, L24, [01;36m[KL25[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:53:42:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+                                 _______, [01;31m[K_______[m[K,  _______,                  LT(_ADJUST, KC_SPACE),  KC_DEL, _______ \
+                                          [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:29:33:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { KC_NO, KC_NO, KC_NO, L30, [01;36m[KL31[m[K, L32 }, \
+                                 [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:53:42:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[2][3][m[K')
+                                 _______, [01;36m[K_______[m[K,  _______,                  LT(_ADJUST, KC_SPACE),  KC_DEL, _______ \
+                                          [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:29:33:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { KC_NO, KC_NO, KC_NO, L30, [01;36m[KL31[m[K, L32 }, \
+                                 [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:53:52:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+                                 _______, _______,  [01;31m[K_______[m[K,                  LT(_ADJUST, KC_SPACE),  KC_DEL, _______ \
+                                                    [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:29:38:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { KC_NO, KC_NO, KC_NO, L30, L31, [01;36m[KL32[m[K }, \
+                                      [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:53:52:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[2][3][m[K')
+                                 _______, _______,  [01;36m[K_______[m[K,                  LT(_ADJUST, KC_SPACE),  KC_DEL, _______ \
+                                                    [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:29:38:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { KC_NO, KC_NO, KC_NO, L30, L31, [01;36m[KL32[m[K }, \
+                                      [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:47:113:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_6,    KC_9,    [01;31m[KKC_0[m[K,    KC_EQUAL, \
+                                                                                                                 [01;31m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:30:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R00, R01, R02, R03, [01;36m[KR04[m[K, R05 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:47:113:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[2][4][m[K')
+     KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_6,    KC_9,    [01;36m[KKC_0[m[K,    KC_EQUAL, \
+                                                                                                                 [01;36m[K^~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:30:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R00, R01, R02, R03, [01;36m[KR04[m[K, R05 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:47:122:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_6,    KC_9,    KC_0,    [01;31m[KKC_EQUAL[m[K, \
+                                                                                                                          [01;31m[K^~~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:30:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R00, R01, R02, R03, R04, [01;36m[KR05[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:47:122:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[2][4][m[K')
+     KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_6,    KC_9,    KC_0,    [01;36m[KKC_EQUAL[m[K, \
+                                                                                                                          [01;36m[K^~~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:30:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R00, R01, R02, R03, R04, [01;36m[KR05[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:49:114:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     _______,  KC_F2,    KC_F3,   KC_F4,   KC_F5,   KC_F6,                   XXXXXXX, KC_LEFT, KC_DOWN, KC_RIGHT, [01;31m[KXXXXXXX[m[K, XXXXXXX, \
+                                                                                                                  [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:31:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R10, R11, R12, R13, [01;36m[KR14[m[K, R15 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:49:114:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[2][5][m[K')
+     _______,  KC_F2,    KC_F3,   KC_F4,   KC_F5,   KC_F6,                   XXXXXXX, KC_LEFT, KC_DOWN, KC_RIGHT, [01;36m[KXXXXXXX[m[K, XXXXXXX, \
+                                                                                                                  [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:31:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R10, R11, R12, R13, [01;36m[KR14[m[K, R15 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:49:123:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     _______,  KC_F2,    KC_F3,   KC_F4,   KC_F5,   KC_F6,                   XXXXXXX, KC_LEFT, KC_DOWN, KC_RIGHT, XXXXXXX, [01;31m[KXXXXXXX[m[K, \
+                                                                                                                           [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:31:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R10, R11, R12, R13, R14, [01;36m[KR15[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:49:123:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[2][5][m[K')
+     _______,  KC_F2,    KC_F3,   KC_F4,   KC_F5,   KC_F6,                   XXXXXXX, KC_LEFT, KC_DOWN, KC_RIGHT, XXXXXXX, [01;36m[KXXXXXXX[m[K, \
+                                                                                                                           [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:31:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R10, R11, R12, R13, R14, [01;36m[KR15[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:51:113:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     _______,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,                  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;31m[KXXXXXXX[m[K, XXXXXXX, \
+                                                                                                                 [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:32:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R20, R21, R22, R23, [01;36m[KR24[m[K, R25 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:51:113:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[2][6][m[K')
+     _______,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,                  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;36m[KXXXXXXX[m[K, XXXXXXX, \
+                                                                                                                 [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:32:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R20, R21, R22, R23, [01;36m[KR24[m[K, R25 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:51:122:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     _______,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,                  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;31m[KXXXXXXX[m[K, \
+                                                                                                                          [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:32:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R20, R21, R22, R23, R24, [01;36m[KR25[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:51:122:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[2][6][m[K')
+     _______,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,                  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;36m[KXXXXXXX[m[K, \
+                                                                                                                          [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:32:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R20, R21, R22, R23, R24, [01;36m[KR25[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:58:33:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_F1, KC_F2, KC_F3, KC_F4, [01;31m[KKC_F5[m[K, KC_F6,                                KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, \
+                                 [01;31m[K^~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:26:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L00, L01, L02, L03, [01;36m[KL04[m[K, L05 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:58:33:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[3][0][m[K')
+     KC_F1, KC_F2, KC_F3, KC_F4, [01;36m[KKC_F5[m[K, KC_F6,                                KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, \
+                                 [01;36m[K^~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:26:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L00, L01, L02, L03, [01;36m[KL04[m[K, L05 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:58:40:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, [01;31m[KKC_F6[m[K,                                KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, \
+                                        [01;31m[K^~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:26:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L00, L01, L02, L03, L04, [01;36m[KL05[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:58:40:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[3][0][m[K')
+     KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, [01;36m[KKC_F6[m[K,                                KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, \
+                                        [01;36m[K^~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:26:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L00, L01, L02, L03, L04, [01;36m[KL05[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:60:41:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;31m[KXXXXXXX[m[K, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+                                         [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:27:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L10, L11, L12, L13, [01;36m[KL14[m[K, L15 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:60:41:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[3][1][m[K')
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;36m[KXXXXXXX[m[K, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+                                         [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:27:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L10, L11, L12, L13, [01;36m[KL14[m[K, L15 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:60:50:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;31m[KXXXXXXX[m[K,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+                                                  [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:27:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L10, L11, L12, L13, L14, [01;36m[KL15[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:60:50:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[3][1][m[K')
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;36m[KXXXXXXX[m[K,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+                                                  [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:27:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L10, L11, L12, L13, L14, [01;36m[KL15[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:62:41:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;31m[KXXXXXXX[m[K, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+                                         [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:28:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L20, L21, L22, L23, [01;36m[KL24[m[K, L25 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:62:41:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[3][2][m[K')
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;36m[KXXXXXXX[m[K, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+                                         [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:28:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L20, L21, L22, L23, [01;36m[KL24[m[K, L25 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:62:50:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;31m[KXXXXXXX[m[K,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+                                                  [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:28:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L20, L21, L22, L23, L24, [01;36m[KL25[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:62:50:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[3][2][m[K')
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;36m[KXXXXXXX[m[K,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+                                                  [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:28:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { L20, L21, L22, L23, L24, [01;36m[KL25[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:64:42:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+                                 _______, [01;31m[K_______[m[K, _______,                   _______, _______, _______ \
+                                          [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:29:33:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { KC_NO, KC_NO, KC_NO, L30, [01;36m[KL31[m[K, L32 }, \
+                                 [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:64:42:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[3][3][m[K')
+                                 _______, [01;36m[K_______[m[K, _______,                   _______, _______, _______ \
+                                          [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:29:33:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { KC_NO, KC_NO, KC_NO, L30, [01;36m[KL31[m[K, L32 }, \
+                                 [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:64:51:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+                                 _______, _______, [01;31m[K_______[m[K,                   _______, _______, _______ \
+                                                   [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:29:38:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { KC_NO, KC_NO, KC_NO, L30, L31, [01;36m[KL32[m[K }, \
+                                      [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:64:51:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[3][3][m[K')
+                                 _______, _______, [01;36m[K_______[m[K,                   _______, _______, _______ \
+                                                   [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:29:38:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { KC_NO, KC_NO, KC_NO, L30, L31, [01;36m[KL32[m[K }, \
+                                      [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:58:107:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6,                                KC_F7, KC_F8, KC_F9, KC_F10, [01;31m[KKC_F11[m[K, KC_F12, \
+                                                                                                           [01;31m[K^~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:30:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R00, R01, R02, R03, [01;36m[KR04[m[K, R05 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:58:107:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[3][4][m[K')
+     KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6,                                KC_F7, KC_F8, KC_F9, KC_F10, [01;36m[KKC_F11[m[K, KC_F12, \
+                                                                                                           [01;36m[K^~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:30:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R00, R01, R02, R03, [01;36m[KR04[m[K, R05 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:58:115:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6,                                KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, [01;31m[KKC_F12[m[K, \
+                                                                                                                   [01;31m[K^~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:30:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R00, R01, R02, R03, R04, [01;36m[KR05[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:58:115:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[3][4][m[K')
+     KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6,                                KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, [01;36m[KKC_F12[m[K, \
+                                                                                                                   [01;36m[K^~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:30:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R00, R01, R02, R03, R04, [01;36m[KR05[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:60:113:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;31m[KXXXXXXX[m[K, XXXXXXX, \
+                                                                                                                 [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:31:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R10, R11, R12, R13, [01;36m[KR14[m[K, R15 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:60:113:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[3][5][m[K')
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;36m[KXXXXXXX[m[K, XXXXXXX, \
+                                                                                                                 [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:31:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R10, R11, R12, R13, [01;36m[KR14[m[K, R15 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:60:122:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;31m[KXXXXXXX[m[K, \
+                                                                                                                          [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:31:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R10, R11, R12, R13, R14, [01;36m[KR15[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:60:122:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[3][5][m[K')
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;36m[KXXXXXXX[m[K, \
+                                                                                                                          [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:31:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R10, R11, R12, R13, R14, [01;36m[KR15[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:62:113:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;31m[KXXXXXXX[m[K, XXXXXXX, \
+                                                                                                                 [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:32:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R20, R21, R22, R23, [01;36m[KR24[m[K, R25 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:62:113:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[3][6][m[K')
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;36m[KXXXXXXX[m[K, XXXXXXX, \
+                                                                                                                 [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:32:27:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R20, R21, R22, R23, [01;36m[KR24[m[K, R25 }, \
+                           [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:62:122:[m[K [01;31m[Kerror: [m[Kexcess elements in array initializer [[01;31m[K-Werror[m[K]
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;31m[KXXXXXXX[m[K, \
+                                                                                                                          [01;31m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:32:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R20, R21, R22, R23, R24, [01;36m[KR25[m[K }, \
+                                [01;36m[K^~~[m[K
+[01m[K./keyboards/askcorne/keymaps/default/keymap.c:62:122:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kkeymaps[3][6][m[K')
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, [01;36m[KXXXXXXX[m[K, \
+                                                                                                                          [01;36m[K^~~~~~~[m[K
+[01m[Kkeyboards/askcorne/askcorne.h:32:32:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLAYOUT[m[K'
+     { R20, R21, R22, R23, R24, [01;36m[KR25[m[K }, \
+                                [01;36m[K^~~[m[K
 cc1: all warnings being treated as errors
  [31;01m[ERRORS][0m
  | 
  | 
  | 
-gmake[1]: *** [builddefs/common_rules.mk:360: .build/obj_askcorne_default/.build/obj_askcorne/src/default_keyboard.o] Error 1
+gmake[1]: *** [builddefs/common_rules.mk:360: .build/obj_askcorne_default/quantum/keymap_introspection.o] Error 1
 gmake: *** [Makefile:414: askcorne:default] Error 1
 [31;01mMake finished with errors
 [0m
