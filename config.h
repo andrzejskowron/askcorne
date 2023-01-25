@@ -12,13 +12,18 @@
 #define MANUFACTURER andrzej.skowron
 #define PRODUCT      askcorne
 
-/* key matrix size */
-#define MATRIX_ROWS 12
-#define MATRIX_COLS 4
 
-#define MATRIX_ROW_PINS { F1, F0, B6, B2, B3, B1 }
+#define MASTER_LEFT
+#define EE_HANDS
+
+
+/* key matrix size */
+#define MATRIX_COLS 6
+#define MATRIX_ROWS 12
+
+#define MATRIX_COL_PINS { F1, F0, B6, B2, B3, B1 }
 // #define MATRIX_ROW_PINS { B1, B3, B2, B6, F0, F1 }
-#define MATRIX_COL_PINS { F4, F5, F6, F7 }
+#define MATRIX_ROW_PINS { F4, F5, F6, F7 }
 #define UNUSED_PINS
 #define DIODE_DIRECTION COL2ROW
 
@@ -26,8 +31,8 @@
 #define DEBOUNCE 5
 
 #ifndef SOFT_SERIAL_PIN
-// #define SOFT_SERIAL_PIN C7
-#define SOFT_SERIAL_PIN D5
+#define SOFT_SERIAL_PIN C7
+// #define SOFT_SERIAL_PIN D5
 #define SERIAL_USE_MULTI_TRANSACTION
 #endif
 
