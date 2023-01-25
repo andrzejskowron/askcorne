@@ -19,7 +19,7 @@
 
 /* key matrix size */
 #define MATRIX_COLS 6
-#define MATRIX_ROWS 12
+#define MATRIX_ROWS 8
 
 #define MATRIX_COL_PINS { F1, F0, B6, B2, B3, B1 }
 // #define MATRIX_ROW_PINS { B1, B3, B2, B6, F0, F1 }
