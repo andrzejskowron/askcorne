@@ -9,8 +9,8 @@
 #define VENDOR_ID    0xFEED
 #define PRODUCT_ID   0x0000
 #define DEVICE_VER   0x0001
-#define MANUFACTURER andrzej.skowron
-#define PRODUCT      askcorne
+#define MANUFACTURER "andrzej.skowron"
+#define PRODUCT      "askcorne"
 
 
 #define MASTER_LEFT
@@ -31,7 +31,7 @@
 #define DEBOUNCE 5
 
 #ifndef SOFT_SERIAL_PIN
-#define SOFT_SERIAL_PIN C7
+#define SOFT_SERIAL_PIN D0
 // #define SOFT_SERIAL_PIN D5
 #define SERIAL_USE_MULTI_TRANSACTION
 #endif
