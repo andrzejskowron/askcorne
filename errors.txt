@@ -24,66 +24,83 @@ Copyright (C) 2018 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
+Generating: .build/obj_askcorne/src/info_config.h                                                   [WARNINGS]
+ | 
+ | ⚠ askcorne: UNUSED_PINS in config.h is deprecated and will be removed at a later date
+ | ⚠ askcorne: PRODUCT_ID in config.h is deprecated in favor of `usb.pid` in info.json and will be removed at a later date
+ | ⚠ askcorne: VENDOR_ID in config.h is deprecated in favor of `usb.vid` in info.json and will be removed at a later date
+ | ⚠ askcorne: PRODUCT in config.h is deprecated in favor of `keyboard_name` in info.json and will be removed at a later date
+ | ⚠ askcorne: MANUFACTURER in config.h is deprecated in favor of `manufacturer` in info.json and will be removed at a later date
+ | ⚠ askcorne: DEVICE_VER in config.h is deprecated in favor of `usb.device_version` in info.json and will be removed at a later date
+ | 
+Generating: .build/obj_askcorne/src/default_keyboard.c                                              [WARNINGS]
+ | 
+ | ⚠ askcorne: UNUSED_PINS in config.h is deprecated and will be removed at a later date
+ | ⚠ askcorne: PRODUCT_ID in config.h is deprecated in favor of `usb.pid` in info.json and will be removed at a later date
+ | ⚠ askcorne: VENDOR_ID in config.h is deprecated in favor of `usb.vid` in info.json and will be removed at a later date
+ | ⚠ askcorne: PRODUCT in config.h is deprecated in favor of `keyboard_name` in info.json and will be removed at a later date
+ | ⚠ askcorne: MANUFACTURER in config.h is deprecated in favor of `manufacturer` in info.json and will be removed at a later date
+ | ⚠ askcorne: DEVICE_VER in config.h is deprecated in favor of `usb.device_version` in info.json and will be removed at a later date
+ | 
+Generating: .build/obj_askcorne/src/default_keyboard.h                                              [WARNINGS]
+ | 
+ | ⚠ askcorne: UNUSED_PINS in config.h is deprecated and will be removed at a later date
+ | ⚠ askcorne: PRODUCT_ID in config.h is deprecated in favor of `usb.pid` in info.json and will be removed at a later date
+ | ⚠ askcorne: VENDOR_ID in config.h is deprecated in favor of `usb.vid` in info.json and will be removed at a later date
+ | ⚠ askcorne: PRODUCT in config.h is deprecated in favor of `keyboard_name` in info.json and will be removed at a later date
+ | ⚠ askcorne: MANUFACTURER in config.h is deprecated in favor of `manufacturer` in info.json and will be removed at a later date
+ | ⚠ askcorne: DEVICE_VER in config.h is deprecated in favor of `usb.device_version` in info.json and will be removed at a later date
+ | 
+Compiling: keyboards/askcorne/askcorne.c                                                            [OK]
+Compiling: .build/obj_askcorne/src/default_keyboard.c                                               [OK]
 Compiling: quantum/keymap_introspection.c                                                          In file included from ./.build/obj_askcorne/src/default_keyboard.h:30,
                  from ./keyboards/askcorne/keymaps/default/keymap.c:3,
                  from quantum/keymap_introspection.c:5:
-./keyboards/askcorne/keymaps/default/keymap.c:24:5: error: 'KC_GESC' undeclared here (not in a function); did you mean 'KC_ESC'?
-     KC_GESC,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
-     ^~~~~~~
-keyboards/askcorne/askcorne.h:26:7: note: in definition of macro 'LAYOUT'
-     { L00, L01, L02, L03, L04, L05 }, \
-       ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:24:42: error: excess elements in array initializer [-Werror]
-     KC_GESC,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
-                                          ^~~~
+./keyboards/askcorne/keymaps/default/keymap.c:24:41: error: excess elements in array initializer [-Werror]
+     KC_GRV,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
+                                         ^~~~
 keyboards/askcorne/askcorne.h:26:27: note: in definition of macro 'LAYOUT'
      { L00, L01, L02, L03, L04, L05 }, \
                            ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:24:42: note: (near initialization for 'keymaps[0][0]')
-     KC_GESC,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
-                                          ^~~~
+./keyboards/askcorne/keymaps/default/keymap.c:24:41: note: (near initialization for 'keymaps[0][0]')
+     KC_GRV,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
+                                         ^~~~
 keyboards/askcorne/askcorne.h:26:27: note: in definition of macro 'LAYOUT'
      { L00, L01, L02, L03, L04, L05 }, \
                            ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:24:51: error: excess elements in array initializer [-Werror]
-     KC_GESC,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
-                                                   ^~~~
-keyboards/askcorne/askcorne.h:26:32: note: in definition of macro 'LAYOUT'
-     { L00, L01, L02, L03, L04, L05 }, \
-                                ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:24:51: note: (near initialization for 'keymaps[0][0]')
-     KC_GESC,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
-                                                   ^~~~
-keyboards/askcorne/askcorne.h:26:32: note: in definition of macro 'LAYOUT'
-     { L00, L01, L02, L03, L04, L05 }, \
-                                ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:26:5: error: 'KC_LCTRL' undeclared here (not in a function); did you mean 'KC_LCTL'?
-     KC_LCTRL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
-     ^~~~~~~~
-keyboards/askcorne/askcorne.h:27:7: note: in definition of macro 'LAYOUT'
-     { L10, L11, L12, L13, L14, L15 }, \
-       ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:26:41: error: excess elements in array initializer [-Werror]
-     KC_LCTRL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
-                                         ^~~~
-keyboards/askcorne/askcorne.h:27:27: note: in definition of macro 'LAYOUT'
-     { L10, L11, L12, L13, L14, L15 }, \
-                           ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:26:41: note: (near initialization for 'keymaps[0][1]')
-     KC_LCTRL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
-                                         ^~~~
-keyboards/askcorne/askcorne.h:27:27: note: in definition of macro 'LAYOUT'
-     { L10, L11, L12, L13, L14, L15 }, \
-                           ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:26:50: error: excess elements in array initializer [-Werror]
-     KC_LCTRL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
+./keyboards/askcorne/keymaps/default/keymap.c:24:50: error: excess elements in array initializer [-Werror]
+     KC_GRV,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
                                                   ^~~~
+keyboards/askcorne/askcorne.h:26:32: note: in definition of macro 'LAYOUT'
+     { L00, L01, L02, L03, L04, L05 }, \
+                                ^~~
+./keyboards/askcorne/keymaps/default/keymap.c:24:50: note: (near initialization for 'keymaps[0][0]')
+     KC_GRV,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
+                                                  ^~~~
+keyboards/askcorne/askcorne.h:26:32: note: in definition of macro 'LAYOUT'
+     { L00, L01, L02, L03, L04, L05 }, \
+                                ^~~
+./keyboards/askcorne/keymaps/default/keymap.c:26:40: error: excess elements in array initializer [-Werror]
+     KC_LCTL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
+                                        ^~~~
+keyboards/askcorne/askcorne.h:27:27: note: in definition of macro 'LAYOUT'
+     { L10, L11, L12, L13, L14, L15 }, \
+                           ^~~
+./keyboards/askcorne/keymaps/default/keymap.c:26:40: note: (near initialization for 'keymaps[0][1]')
+     KC_LCTL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
+                                        ^~~~
+keyboards/askcorne/askcorne.h:27:27: note: in definition of macro 'LAYOUT'
+     { L10, L11, L12, L13, L14, L15 }, \
+                           ^~~
+./keyboards/askcorne/keymaps/default/keymap.c:26:49: error: excess elements in array initializer [-Werror]
+     KC_LCTL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
+                                                 ^~~~
 keyboards/askcorne/askcorne.h:27:32: note: in definition of macro 'LAYOUT'
      { L10, L11, L12, L13, L14, L15 }, \
                                 ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:26:50: note: (near initialization for 'keymaps[0][1]')
-     KC_LCTRL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
-                                                  ^~~~
+./keyboards/askcorne/keymaps/default/keymap.c:26:49: note: (near initialization for 'keymaps[0][1]')
+     KC_LCTL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
+                                                 ^~~~
 keyboards/askcorne/askcorne.h:27:32: note: in definition of macro 'LAYOUT'
      { L10, L11, L12, L13, L14, L15 }, \
                                 ^~~
@@ -141,51 +158,51 @@ keyboards/askcorne/askcorne.h:29:38: note: in definition of macro 'LAYOUT'
 ./keyboards/askcorne/keymaps/default/keymap.c:30:43: note: in expansion of macro 'LT'
                          KC_LALT, KC_LGUI, LT(_RAISE, KC_ENT),               LT(_LOWER, KC_SPACE),   KC_BSPC,   KC_RALT \
                                            ^~
-./keyboards/askcorne/keymaps/default/keymap.c:24:113: error: excess elements in array initializer [-Werror]
-     KC_GESC,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
-                                                                                                                 ^~~~~~~
+./keyboards/askcorne/keymaps/default/keymap.c:24:112: error: excess elements in array initializer [-Werror]
+     KC_GRV,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
+                                                                                                                ^~~~~~~
 keyboards/askcorne/askcorne.h:30:27: note: in definition of macro 'LAYOUT'
      { R00, R01, R02, R03, R04, R05 }, \
                            ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:24:113: note: (near initialization for 'keymaps[0][4]')
-     KC_GESC,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
-                                                                                                                 ^~~~~~~
+./keyboards/askcorne/keymaps/default/keymap.c:24:112: note: (near initialization for 'keymaps[0][4]')
+     KC_GRV,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
+                                                                                                                ^~~~~~~
 keyboards/askcorne/askcorne.h:30:27: note: in definition of macro 'LAYOUT'
      { R00, R01, R02, R03, R04, R05 }, \
                            ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:24:125: error: excess elements in array initializer [-Werror]
-     KC_GESC,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
-                                                                                                                             ^~~~~~~
+./keyboards/askcorne/keymaps/default/keymap.c:24:124: error: excess elements in array initializer [-Werror]
+     KC_GRV,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
+                                                                                                                            ^~~~~~~
 keyboards/askcorne/askcorne.h:30:32: note: in definition of macro 'LAYOUT'
      { R00, R01, R02, R03, R04, R05 }, \
                                 ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:24:125: note: (near initialization for 'keymaps[0][4]')
-     KC_GESC,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
-                                                                                                                             ^~~~~~~
+./keyboards/askcorne/keymaps/default/keymap.c:24:124: note: (near initialization for 'keymaps[0][4]')
+     KC_GRV,   KC_Q,   KC_D,    KC_R,    KC_W,    KC_B,                     KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN,    KC_MINS, \
+                                                                                                                            ^~~~~~~
 keyboards/askcorne/askcorne.h:30:32: note: in definition of macro 'LAYOUT'
      { R00, R01, R02, R03, R04, R05 }, \
                                 ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:26:112: error: excess elements in array initializer [-Werror]
-     KC_LCTRL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
-                                                                                                                ^~~~
+./keyboards/askcorne/keymaps/default/keymap.c:26:111: error: excess elements in array initializer [-Werror]
+     KC_LCTL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
+                                                                                                               ^~~~
 keyboards/askcorne/askcorne.h:31:27: note: in definition of macro 'LAYOUT'
      { R10, R11, R12, R13, R14, R15 }, \
                            ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:26:112: note: (near initialization for 'keymaps[0][5]')
-     KC_LCTRL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
-                                                                                                                ^~~~
+./keyboards/askcorne/keymaps/default/keymap.c:26:111: note: (near initialization for 'keymaps[0][5]')
+     KC_LCTL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
+                                                                                                               ^~~~
 keyboards/askcorne/askcorne.h:31:27: note: in definition of macro 'LAYOUT'
      { R10, R11, R12, R13, R14, R15 }, \
                            ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:26:121: error: excess elements in array initializer [-Werror]
-     KC_LCTRL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
-                                                                                                                         ^~~~~~~
+./keyboards/askcorne/keymaps/default/keymap.c:26:120: error: excess elements in array initializer [-Werror]
+     KC_LCTL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
+                                                                                                                        ^~~~~~~
 keyboards/askcorne/askcorne.h:31:32: note: in definition of macro 'LAYOUT'
      { R10, R11, R12, R13, R14, R15 }, \
                                 ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:26:121: note: (near initialization for 'keymaps[0][5]')
-     KC_LCTRL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
-                                                                                                                         ^~~~~~~
+./keyboards/askcorne/keymaps/default/keymap.c:26:120: note: (near initialization for 'keymaps[0][5]')
+     KC_LCTL, KC_A,   KC_S,    KC_H,    KC_T,    KC_G,                     KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_QUOT, \
+                                                                                                                        ^~~~~~~
 keyboards/askcorne/askcorne.h:31:32: note: in definition of macro 'LAYOUT'
      { R10, R11, R12, R13, R14, R15 }, \
                                 ^~~
@@ -213,27 +230,27 @@ keyboards/askcorne/askcorne.h:32:32: note: in definition of macro 'LAYOUT'
 keyboards/askcorne/askcorne.h:32:32: note: in definition of macro 'LAYOUT'
      { R20, R21, R22, R23, R24, R25 }, \
                                 ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:36:42: error: excess elements in array initializer [-Werror]
-     KC_GESC,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
-                                          ^~~~
+./keyboards/askcorne/keymaps/default/keymap.c:36:41: error: excess elements in array initializer [-Werror]
+     KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
+                                         ^~~~
 keyboards/askcorne/askcorne.h:26:27: note: in definition of macro 'LAYOUT'
      { L00, L01, L02, L03, L04, L05 }, \
                            ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:36:42: note: (near initialization for 'keymaps[1][0]')
-     KC_GESC,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
-                                          ^~~~
+./keyboards/askcorne/keymaps/default/keymap.c:36:41: note: (near initialization for 'keymaps[1][0]')
+     KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
+                                         ^~~~
 keyboards/askcorne/askcorne.h:26:27: note: in definition of macro 'LAYOUT'
      { L00, L01, L02, L03, L04, L05 }, \
                            ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:36:51: error: excess elements in array initializer [-Werror]
-     KC_GESC,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
-                                                   ^~~~
+./keyboards/askcorne/keymaps/default/keymap.c:36:50: error: excess elements in array initializer [-Werror]
+     KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
+                                                  ^~~~
 keyboards/askcorne/askcorne.h:26:32: note: in definition of macro 'LAYOUT'
      { L00, L01, L02, L03, L04, L05 }, \
                                 ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:36:51: note: (near initialization for 'keymaps[1][0]')
-     KC_GESC,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
-                                                   ^~~~
+./keyboards/askcorne/keymaps/default/keymap.c:36:50: note: (near initialization for 'keymaps[1][0]')
+     KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
+                                                  ^~~~
 keyboards/askcorne/askcorne.h:26:32: note: in definition of macro 'LAYOUT'
      { L00, L01, L02, L03, L04, L05 }, \
                                 ^~~
@@ -249,9 +266,9 @@ quantum/quantum_keycodes.h:81:15: note: in expansion of macro 'LSFT'
 quantum/keymap_extras/keymap_us.h:28:17: note: in expansion of macro 'S'
  #define KC_DLR  S(KC_4)     // $
                  ^
-./keyboards/askcorne/keymaps/default/keymap.c:38:40: note: in expansion of macro 'KC_DLR'
-     KC_GRV, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
-                                        ^~~~~~
+./keyboards/askcorne/keymaps/default/keymap.c:38:41: note: in expansion of macro 'KC_DLR'
+     _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
+                                         ^~~~~~
 quantum/quantum_keycodes.h:48:18: note: (near initialization for 'keymaps[1][1]')
  #define LSFT(kc) (QK_LSFT | (kc))
                   ^
@@ -264,9 +281,9 @@ quantum/quantum_keycodes.h:81:15: note: in expansion of macro 'LSFT'
 quantum/keymap_extras/keymap_us.h:28:17: note: in expansion of macro 'S'
  #define KC_DLR  S(KC_4)     // $
                  ^
-./keyboards/askcorne/keymaps/default/keymap.c:38:40: note: in expansion of macro 'KC_DLR'
-     KC_GRV, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
-                                        ^~~~~~
+./keyboards/askcorne/keymaps/default/keymap.c:38:41: note: in expansion of macro 'KC_DLR'
+     _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
+                                         ^~~~~~
 quantum/quantum_keycodes.h:48:18: error: excess elements in array initializer [-Werror]
  #define LSFT(kc) (QK_LSFT | (kc))
                   ^
@@ -279,9 +296,9 @@ quantum/quantum_keycodes.h:81:15: note: in expansion of macro 'LSFT'
 quantum/keymap_extras/keymap_us.h:29:17: note: in expansion of macro 'S'
  #define KC_PERC S(KC_5)     // %
                  ^
-./keyboards/askcorne/keymaps/default/keymap.c:38:49: note: in expansion of macro 'KC_PERC'
-     KC_GRV, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
-                                                 ^~~~~~~
+./keyboards/askcorne/keymaps/default/keymap.c:38:50: note: in expansion of macro 'KC_PERC'
+     _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
+                                                  ^~~~~~~
 quantum/quantum_keycodes.h:48:18: note: (near initialization for 'keymaps[1][1]')
  #define LSFT(kc) (QK_LSFT | (kc))
                   ^
@@ -294,9 +311,9 @@ quantum/quantum_keycodes.h:81:15: note: in expansion of macro 'LSFT'
 quantum/keymap_extras/keymap_us.h:29:17: note: in expansion of macro 'S'
  #define KC_PERC S(KC_5)     // %
                  ^
-./keyboards/askcorne/keymaps/default/keymap.c:38:49: note: in expansion of macro 'KC_PERC'
-     KC_GRV, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
-                                                 ^~~~~~~
+./keyboards/askcorne/keymaps/default/keymap.c:38:50: note: in expansion of macro 'KC_PERC'
+     _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
+                                                  ^~~~~~~
 ./keyboards/askcorne/keymaps/default/keymap.c:40:41: error: excess elements in array initializer [-Werror]
      _______, _______, _______, _______, _______, _______,                    XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE, \
                                          ^~~~~~~
@@ -345,27 +362,27 @@ keyboards/askcorne/askcorne.h:29:38: note: in definition of macro 'LAYOUT'
 keyboards/askcorne/askcorne.h:29:38: note: in definition of macro 'LAYOUT'
      { KC_NO, KC_NO, KC_NO, L30, L31, L32 }, \
                                       ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:36:115: error: excess elements in array initializer [-Werror]
-     KC_GESC,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
-                                                                                                                   ^~~~
+./keyboards/askcorne/keymaps/default/keymap.c:36:114: error: excess elements in array initializer [-Werror]
+     KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
+                                                                                                                  ^~~~
 keyboards/askcorne/askcorne.h:30:27: note: in definition of macro 'LAYOUT'
      { R00, R01, R02, R03, R04, R05 }, \
                            ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:36:115: note: (near initialization for 'keymaps[1][4]')
-     KC_GESC,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
-                                                                                                                   ^~~~
+./keyboards/askcorne/keymaps/default/keymap.c:36:114: note: (near initialization for 'keymaps[1][4]')
+     KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
+                                                                                                                  ^~~~
 keyboards/askcorne/askcorne.h:30:27: note: in definition of macro 'LAYOUT'
      { R00, R01, R02, R03, R04, R05 }, \
                            ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:36:124: error: excess elements in array initializer [-Werror]
-     KC_GESC,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
-                                                                                                                            ^~~~~~~~
+./keyboards/askcorne/keymaps/default/keymap.c:36:123: error: excess elements in array initializer [-Werror]
+     KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
+                                                                                                                           ^~~~~~~~
 keyboards/askcorne/askcorne.h:30:32: note: in definition of macro 'LAYOUT'
      { R00, R01, R02, R03, R04, R05 }, \
                                 ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:36:124: note: (near initialization for 'keymaps[1][4]')
-     KC_GESC,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
-                                                                                                                            ^~~~~~~~
+./keyboards/askcorne/keymaps/default/keymap.c:36:123: note: (near initialization for 'keymaps[1][4]')
+     KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_UP,    KC_9,    KC_0,    KC_EQUAL, \
+                                                                                                                           ^~~~~~~~
 keyboards/askcorne/askcorne.h:30:32: note: in definition of macro 'LAYOUT'
      { R00, R01, R02, R03, R04, R05 }, \
                                 ^~~
@@ -381,9 +398,9 @@ quantum/quantum_keycodes.h:81:15: note: in expansion of macro 'LSFT'
 quantum/keymap_extras/keymap_us.h:34:17: note: in expansion of macro 'S'
  #define KC_RPRN S(KC_0)     // )
                  ^
-./keyboards/askcorne/keymaps/default/keymap.c:38:115: note: in expansion of macro 'KC_RPRN'
-     KC_GRV, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
-                                                                                                                   ^~~~~~~
+./keyboards/askcorne/keymaps/default/keymap.c:38:116: note: in expansion of macro 'KC_RPRN'
+     _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
+                                                                                                                    ^~~~~~~
 quantum/quantum_keycodes.h:48:18: note: (near initialization for 'keymaps[1][5]')
  #define LSFT(kc) (QK_LSFT | (kc))
                   ^
@@ -396,18 +413,18 @@ quantum/quantum_keycodes.h:81:15: note: in expansion of macro 'LSFT'
 quantum/keymap_extras/keymap_us.h:34:17: note: in expansion of macro 'S'
  #define KC_RPRN S(KC_0)     // )
                  ^
-./keyboards/askcorne/keymaps/default/keymap.c:38:115: note: in expansion of macro 'KC_RPRN'
-     KC_GRV, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
-                                                                                                                   ^~~~~~~
-./keyboards/askcorne/keymaps/default/keymap.c:38:124: error: excess elements in array initializer [-Werror]
-     KC_GRV, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
-                                                                                                                            ^~~~~~~
+./keyboards/askcorne/keymaps/default/keymap.c:38:116: note: in expansion of macro 'KC_RPRN'
+     _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
+                                                                                                                    ^~~~~~~
+./keyboards/askcorne/keymaps/default/keymap.c:38:125: error: excess elements in array initializer [-Werror]
+     _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
+                                                                                                                             ^~~~~~~
 keyboards/askcorne/askcorne.h:31:32: note: in definition of macro 'LAYOUT'
      { R10, R11, R12, R13, R14, R15 }, \
                                 ^~~
-./keyboards/askcorne/keymaps/default/keymap.c:38:124: note: (near initialization for 'keymaps[1][5]')
-     KC_GRV, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
-                                                                                                                            ^~~~~~~
+./keyboards/askcorne/keymaps/default/keymap.c:38:125: note: (near initialization for 'keymaps[1][5]')
+     _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_LEFT, KC_DOWN, KC_RIGHT, KC_RPRN, _______, \
+                                                                                                                             ^~~~~~~
 keyboards/askcorne/askcorne.h:31:32: note: in definition of macro 'LAYOUT'
      { R10, R11, R12, R13, R14, R15 }, \
                                 ^~~
@@ -809,9 +826,9 @@ keyboards/askcorne/askcorne.h:32:32: note: in definition of macro 'LAYOUT'
                                 ^~~
 cc1: all warnings being treated as errors
  [ERRORS]
- |
- |
- |
+ | 
+ | 
+ | 
 gmake[1]: *** [builddefs/common_rules.mk:360: .build/obj_askcorne_default/quantum/keymap_introspection.o] Error 1
 gmake: *** [Makefile:414: askcorne:default] Error 1
 Make finished with errors
